@@ -10,34 +10,124 @@
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#434c5e">
     <meta name="googlebot" content="index, follow, snippet" />
     <link rel="stylesheet" href="index.css">
-</script>
-<body onload = "showAlert()" >
+    <script src="index.js"></script>
 </head>
 
-<body>
-<br><br><br>
-<br><br>
-<br><br>
-    </div>
+<body onload="showAlert()">
+    <header class="header">
+        <div class="header-left">
+            <a href="https://github.com" target="_blank" class="header-link">
+                <img src="github_icon.png" alt="GitHub" class="header-icon">
+            </a>
+        </div>
+        <div class="header-center">
+            <h1 class="title">Arctic</h1>
+        </div>
+        <div class="header-right">
+            <a href="#" class="header-link">Games</a>
+            <a href="#" class="header-link">Apps</a>
+            <a href="#" class="header-link">Settings</a>
+        </div>
+    </header>
+
+    <br><br><br>
+    <br><br>
+    <br><br>
+
     <div class="desc">
-        <h1 style="background-color:lightblue;" class="title">Arctic</h1><br><br>
+        <h1 style="background-color:lightblue;" class="title">Arctic</h1>
     </div>
-<br>
+
     <form>
         <input class="search-input" placeholder="Dive into the unblocked web..." style="background-color: lightblue;">
     </form>
-    <div class="text-center">
-</script>
-<style>*{color:lightblue;font-family:arial;text-align:center}button{width:220px;height:40px;border-radius:12px;background-color:#080808;font-family:Arial,Helvetica,sans-serif;border:none;transition:background-color 500ms}button:hover{background-color:#080808}</style>
-  </div>
-<br>
-    <div>
+
+    <div class="text-center"></div>
+
+    <br>
+
     <footer style="bottom: 0; position: fixed;">
         <p>&copy; OpalNetwork</p>
-    </footer></div>
+    </footer>
+
     <script src="uv/uv.bundle.js"></script>
     <script src="uv/uv.config.js"></script>
-    <script src="index.js"></script>
+
+    <style>
+        * {
+            color: lightblue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .header {
+            background-color: #080808;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+        }
+        
+        .header-left,
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+        
+        .header-center {
+            flex-grow: 1;
+            text-align: center;
+        }
+        
+        .header-link {
+            color: lightblue;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .header-icon {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .title {
+            background-color: lightblue;
+        }
+        
+        .search-input {
+            background-color: lightblue;
+        }
+        
+        button {
+            width: 220px;
+            height: 40px;
+            border-radius: 12px;
+            background-color: #080808;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            transition: background-color 500ms;
+        }
+        
+        button:hover {
+            background-color: #505050;
+        }
+        
+        footer {
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: #080808;
+            color: lightblue;
+        }
+    </style>
 </body>
 
 </html>
+
